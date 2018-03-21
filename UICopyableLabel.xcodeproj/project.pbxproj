@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A67C38ED2062ADE800E92669 /* UICopyableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67C38EC2062ADE800E92669 /* UICopyableLabel.swift */; };
+		A67C38F02062B7E600E92669 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67C38EF2062B7E600E92669 /* PureLayout.framework */; };
 		A6EEE1602062AB24000EFAE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EEE15F2062AB24000EFAE3 /* AppDelegate.swift */; };
 		A6EEE1622062AB24000EFAE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EEE1612062AB24000EFAE3 /* ViewController.swift */; };
-		A6EEE1652062AB24000EFAE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6EEE1632062AB24000EFAE3 /* Main.storyboard */; };
 		A6EEE1672062AB24000EFAE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EEE1662062AB24000EFAE3 /* Assets.xcassets */; };
 		A6EEE16A2062AB24000EFAE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6EEE1682062AB24000EFAE3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A67C38EC2062ADE800E92669 /* UICopyableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICopyableLabel.swift; sourceTree = "<group>"; };
+		A67C38EF2062B7E600E92669 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
 		A6EEE15C2062AB24000EFAE3 /* UICopyableLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICopyableLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6EEE15F2062AB24000EFAE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6EEE1612062AB24000EFAE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A6EEE1642062AB24000EFAE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6EEE1662062AB24000EFAE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6EEE1692062AB24000EFAE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6EEE16B2062AB24000EFAE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,17 +31,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A67C38F02062B7E600E92669 /* PureLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A67C38EE2062B7E600E92669 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A67C38EF2062B7E600E92669 /* PureLayout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A6EEE1532062AB24000EFAE3 = {
 			isa = PBXGroup;
 			children = (
 				A6EEE15E2062AB24000EFAE3 /* UICopyableLabel */,
 				A6EEE15D2062AB24000EFAE3 /* Products */,
+				A67C38EE2062B7E600E92669 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +68,10 @@
 			children = (
 				A6EEE15F2062AB24000EFAE3 /* AppDelegate.swift */,
 				A6EEE1612062AB24000EFAE3 /* ViewController.swift */,
-				A6EEE1632062AB24000EFAE3 /* Main.storyboard */,
 				A6EEE1662062AB24000EFAE3 /* Assets.xcassets */,
 				A6EEE1682062AB24000EFAE3 /* LaunchScreen.storyboard */,
 				A6EEE16B2062AB24000EFAE3 /* Info.plist */,
+				A67C38EC2062ADE800E92669 /* UICopyableLabel.swift */,
 			);
 			path = UICopyableLabel;
 			sourceTree = "<group>";
@@ -74,6 +86,7 @@
 				A6EEE1582062AB24000EFAE3 /* Sources */,
 				A6EEE1592062AB24000EFAE3 /* Frameworks */,
 				A6EEE15A2062AB24000EFAE3 /* Resources */,
+				A67C38F12062B86F00E92669 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -125,11 +138,27 @@
 			files = (
 				A6EEE16A2062AB24000EFAE3 /* LaunchScreen.storyboard in Resources */,
 				A6EEE1672062AB24000EFAE3 /* Assets.xcassets in Resources */,
-				A6EEE1652062AB24000EFAE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A67C38F12062B86F00E92669 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PureLayout.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6EEE1582062AB24000EFAE3 /* Sources */ = {
@@ -138,20 +167,13 @@
 			files = (
 				A6EEE1622062AB24000EFAE3 /* ViewController.swift in Sources */,
 				A6EEE1602062AB24000EFAE3 /* AppDelegate.swift in Sources */,
+				A67C38ED2062ADE800E92669 /* UICopyableLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A6EEE1632062AB24000EFAE3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A6EEE1642062AB24000EFAE3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A6EEE1682062AB24000EFAE3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -275,6 +297,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LKY5E3QCX4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UICopyableLabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = daikikatayama.UICopyableLabel;
@@ -289,6 +316,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LKY5E3QCX4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UICopyableLabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = daikikatayama.UICopyableLabel;
